@@ -1,32 +1,30 @@
-#wrapper{
-    display:inline-block;
-    border-top: solid;
-    border-bottom: solid;
-    border-color: blue;
-    text-align: center;
-    background-color: white;
-    margin:50px auto 0px;
-    border-radius:180px;
-    padding: 20px 5px;
+body{
+    position: relative;
 }
-
-#menu>ul{
-    display: inline-block;
-}
-#menu>ul>li{
-    float:left;
-}
-#menu>ul>li>a{
-    position:relative;
-    display:block;
+#menu{
+    height:52px;
+    border-top:solid;
+    border-bottom:solid;
+    border-width:1px;
+    border-color:blue;
     text-align:center;
+    background-color: white;
+    padding: 10px 0px;
+
+}
+#menu>ul{
+    display:inline-block;
+    margin:auto
 }
 
-#menu>ul>li>ul>li{
-    float:none
+
+.cube{
+    width:100px;
+    height:100px;
 }
-#menu>ul>li>ul>a{
-    width:auto;
-    padding:0 10px;
-    text-align:left;
+#menu>ul>a{
+    width:120px;
+    background:white;
+    color:black;
+    border:none;
 }
