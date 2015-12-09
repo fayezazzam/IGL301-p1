@@ -1,16 +1,126 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Rubik's Cube</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet"/>
     </head>
     <body>
-        <div>TODO write content</div>
+
+        <div class="header">
+            <a href=""><img src="Rubik-s-Cube-2-X-2-3453652_3.jpg" width='300' height="250" ></a>
+            <span>All Problem Can Be Solved</span>
+
+
+        </div>
+        <div id="wrapper">
+            <nav id="menu">
+
+                <ul>
+                    <li><a href="Beginner">Beginner</a>
+                        <ul>
+                            <li><a href="step1">1.Cross</a></li>
+                            <li><a href="step2">2.Corners</a></li>
+                            <li><a href="step3">3.Second Layer</a></li>
+                            <li><a href="step4">4.Last Layer Cross</a></li>
+                            <li><a href="step5">5.Last Layer Edges</a></li>
+                            <li><a href="step6">6.Last Layer Corners 1</a></li>
+                            <li><a href="step7">7.Last Layer Corners 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Intermediate">Intermediate</a>
+                        <ul>
+                            <li><a href="step-1">1. 2-look OLL</a></li>
+                            <li><a href="step-2">2. 2-look PLL</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="Advanced">Advanced</a>
+                        <ul>
+                            <li><a href="step-1">1.Cross</a></li>
+                            <li><a href="step-2">2.F2L</a></li>
+                            <li><a href="step-3">3.OLL</a></li>
+                            <li><a href="step-4">4.PLL</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="notation">Notation</a></li>
+                    <li><a href="contact">Contact</a></li>
+            </nav>
+        </div>
+        <div><h1>Beginner Method</h1>
+        </div>
+        <p>This website will teach you three ways of solving the Rubik's
+            Cube that I call beginner, intermediate, and advanced.
+            I advise you to start with the beginner method, as this will 
+            take you to completely solving the cube unaided even if you've 
+            never picked one up before. 
+            The further two methods assume you can already solve a cube, 
+            so these are aimed at those who want to start their speedcubing 
+            journey of whittling their times ever downwards.</p>
+
+        <p>Let's begin!</p>
+        <h2 id="step1">Step 1 - The Cross</h2>
+        <p>The first thing to know about the cube is that it is usually solved 
+            layer by layer. Trying to do it face by face is practically impossible,
+            as you can't complete the later faces without screwing up the ones you
+            may have already done. The second thing to know is that the middle pieces 
+            don't move. Go ahead, try and move them. They rotate, but they never move 
+            in relation to each other, which means that each face will always be that face.
+            A common mistake people make when they first approach an unsolved cube is to think 
+            they have to solve 54 stickers. In fact, there are only 20 pieces that actually move
+            around - 8 corner pieces and 12 edge pieces.</p>
+
+        <p>The first thing you have to do is to create a cross on the first layer, like so:</p>
+
+        <img class="cube" src="1.png" width="200" height="200">
+
+        <p>Grey 'cubies' (the smaller cubes that make up the Rubik's Cube)
+            are cubies that are not important at this stage, and you can just ignore
+            them.</p>
+
+        <p>You will notice that this cross is white, a decision not made at random.
+            Throughout this website, it will always be assumed that the first 
+            face is the white face. Every single time you do the cube, you should
+            start with the white face so you get used to always looking out for the
+            same colours at different stages. If I were to pick up a cube and start
+            with, say, the green face, I would get terribly confused when it came to 
+            the last layer because I am so used to looking for yellow pieces instead 
+            of blue ones. Most other Rubik's Cube resources also start with the white
+            face, so if you get used to it now you'll always know precisely what's going on.</p>
+
+        <p>Explaining exactly how to create this cross can be a little challenging, 
+            as it relies mostly on logic. Later in this guide, I will be able to tell
+            you exactly which moves to perform in sequences called <b>algorithms</b> but
+            because you are starting from a scrambled cube, this step will be different 
+            every time. I heartily recommend that you see if you can just work out how to
+            assemble this cross, if not as a mental exercise then as a bit of fun.
+            If you are struggling, or don't think this qualifies as fun, or perhaps 
+            if you're only here to learn to solve a Rubik's Cube as soon as possible 
+            in order to win a bet and aren't interested in whimsical things like fun,
+            then there are some scenarios you can watch out for:</p>
+
+        <div class="row">
+            <div class="columns">
+                <div class="alg">
+                    <img class="cube" src="2.png" width="200" height="200">
+                    <span>R</span>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="alg">
+                    <img class="cube" src="3.png" width="200" height="200">
+                    <span>F R</span>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="alg">
+                    <img class="cube" src="4.png" width="200" height="200">
+                    <span>F R U</span>
+                </div>
+            </div>
+        </div>
+
+
     </body>
 </html>
