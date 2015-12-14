@@ -8,23 +8,21 @@
     </head>
     <body>
 
-        <div class="header">
-            <a href=""><img src="Rubik-s-Cube-2-X-2-3453652_3.jpg" width='300' height="250" ></a>
-            <span>All Problem Can Be Solved</span>
-
-
+        <div id="header">
+            <a href=""><img src="img/cubes/Rubik-s-Cube-2-X-2-3453652_3.jpg" width='300' height="250" ></a>
+            <span>All Problems Can Be Solved</span>
+            
         </div>
-        <div id="wrapper">
-            <nav id="menu">
-                <ul>
-                    <a href="index.html">Beginner</a>
-                    <a href="intermediate.html">Intermediate</a>
-                    <a href="advanced.html">Advanced</a>
-                    <a href="contact.html">Contact</a>
-                </ul>
-            </nav>
 
-        </div>
+        <nav id="menu">
+            <ul>
+                <a href="index.html">Beginner</a>
+                <a href="intermediate.html">Intermediate</a>
+                <a href="advanced.html">Advanced</a>
+                <a href="contact.html">Contact</a>
+            </ul>
+        </nav>
+
         <div><h1>Beginner Method</h1>
         </div>
         <p>This website will teach you three ways of solving the Rubik's
@@ -37,7 +35,7 @@
             journey of whittling their times ever downwards.</p>
 
         <p>Let's begin!</p>
-        <h2 id="step1">Step 1 - The Cross</h2>
+        <h2>Step 1 - The Cross</h2>
         <p>The first thing to know about the cube is that it is usually solved 
             layer by layer. Trying to do it face by face is practically impossible,
             as you can't complete the later faces without screwing up the ones you
@@ -50,7 +48,7 @@
 
         <p>The first thing you have to do is to create a cross on the first layer, like so:</p>
 
-        <img class="cube" src="1.png" width="200" height="200">
+        <img class="cube" src="img/cubes/1.png" width="200" height="200">
 
         <p>Grey 'cubies' (the smaller cubes that make up the Rubik's Cube)
             are cubies that are not important at this stage, and you can just ignore
@@ -77,26 +75,18 @@
             in order to win a bet and aren't interested in whimsical things like fun,
             then there are some scenarios you can watch out for:</p>
 
-        <div class="row">
-            <div class="columns">
-                <div class="alg">
-                    <img class="cube" src="2.png" width="200" height="200">
-                    <span>R</span>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="alg">
-                    <img class="cube" src="3.png" width="200" height="200">
-                    <span>F R</span>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="alg">
-                    <img class="cube" src="4.png" width="200" height="200">
-                    <span>F R U</span>
-                </div>
-            </div>
-        </div>
+
+        <img class="cube" src="img/cubes/2.png" width="200" height="200">
+        <span>R</span>
+
+        <img class="cube" src="img/cubes/3.png" width="200" height="200">
+        <span>F R</span>
+
+
+        <img class="cube" src="img/cubes/4.png" width="200" height="200">
+        <span>F R U</span>
+
+
         <p>It is also important to remember that the edge colours have to be aligned 
             with the centres like this:</p>
         <img class="cube" src="img/cubes/xwxwwwxwxxrxxrxxxxxbxxbxxxx.png" width="200" height="200">
@@ -104,7 +94,7 @@
         <img class="cube" src="img/cubes/xwxwwwxwxxoxxrxxxxxrxxbxxxx.png" width="200" height="200">
 
 
-        <h2 id="step2">Step 2 - The Corners</h2>
+        <h2>Step 2 - The Corners</h2>
         <p>The next step is to put the corners in, like this:</p>
         <img class="cube" src="img/cubes/wwwwwwwwwrrrxrxxxxbbbxbxxxx.png" width="200" height="200">
         <p>Just like the edge pieces before, it is important that the corner pieces
@@ -116,49 +106,35 @@
             That is, the white-blue-red cubie should be underneath the white-blue-red corner.
             There is an algorithm for each situation:</p>
 
-        <div class="row">
-            <div class="small-12 medium-4 columns">
-                <div class="alg">
-                    <img class="cube" src="img/cubes/xwxwwwxwxxrxxrxxxwxbxxbxbxx.png" width="200" height="200">
-                    <span>F D F'</span>
-                </div>
-            </div>
-            <div class="small-12 medium-4 columns">
-                <div class="alg">
-                    <img class="cube" src="img/cubes/xwxwwwxwxxrxxrxxxrxbxxbxwxx.png" width="200" height="200">
-                    <span>R' D' R</span>
-                </div>
-            </div>
-            <div class="small-12 medium-4 columns">
-                <div class="alg">
-                    <img class="cube" src="img/cubes/xwxwwwxwxxrxxrxxxbxbxxbxrxx.png" width="200" height="200">
-                    <span>R' D R F D2 F'</span>
-                    <p>(Here, the white sticker on the corner is on the bottom.)</p>
-                </div>
-            </div>
-        </div>
+        <img class="cube" src="img/cubes/xwxwwwxwxxrxxrxxxwxbxxbxbxx.png" width="200" height="200">
+        <span>F D F'</span>
+
+        <img class="cube" src="img/cubes/xwxwwwxwxxrxxrxxxrxbxxbxwxx.png" width="200" height="200">
+        <span>R' D' R</span>
+
+        <img class="cube" src="img/cubes/xwxwwwxwxxrxxrxxxbxbxxbxrxx.png" width="200" height="200">
+        <span>R' D R F D2 F'</span>
+        <p>(Here, the white sticker on the corner is on the bottom.)</p>
+
 
         <p>In some cases, the corner will be on the top layer but just needs reorienting, 
             for example:</p>
-        <div class="alg">
-            <img class="cube" src="img/cubes/xwxwwwxwbxrwxrxxxxrbxxbxxxx.png" width="200" height="200">
-            <span>R' D R F D F'</span>
-            <p>The last three moves are from before - the cubie just had to put in the 
-                proper place first.</p>
-        </div>
+        <img class="cube" src="img/cubes/xwxwwwxwbxrwxrxxxxrbxxbxxxx.png" width="200" height="200">
+        <span>R' D R F D F'</span>
+        <p>The last three moves are from before - the cubie just had to put in the 
+            proper place first.</p>
+
         <p>If a corner cubie is in the top layer but in the wrong place, it also needs 
             to be taken down to the bottom layer. This can be done with either of the
             following algorithms:</p>
-        <div class="alg">
-            <img class="cube" src="img/cubes/xwxwwwxwwxroxrxxxxgbxxbxxxx.png" width="200" height="200">
-            <span>F D' F' or R' D R</span>
-        </div>
+        <img class="cube" src="img/cubes/xwxwwwxwwxroxrxxxxgbxxbxxxx.png" width="200" height="200">
+        <span>F D' F' or R' D R</span>
         <p>Once the cubie is on the bottom layer, it can be put it in the correct place by using
             the above algorithms. When you can, always try to use one of the first two algorithms 
             instead of the third as they are shorter and will save you time.</p>
 
 
-        <h2 id="step3">Step 3 - The Second Layer</h2>
+        <h2>Step 3 - The Second Layer</h2>
         <p>The next step is to put the four second layer pieces in the right place, like this:</p>
         <img class="cube" src="img/cubes/wwwwwwwwwrrrrrrxxxbbbbbbxxx.png" width="200" height="200">
 
@@ -168,33 +144,22 @@
         <p>Then find the piece that you need to put in the correct place - in this case the
             blue and red edge piece. Turn the top layer until you find one of these two situations:</p>
 
-        <div class="alg">
-            <img class="cube" src="img/cubes/xxxxyxxrxxbxxbxbbbxxxxrxrrr.png" width="200" height="200">
-            or
-            <img class="cube" style="margin-left: 0.5rem;" src="img/cubes/xxxxyxxbxxrxxrxrrrxxxxgxggg.png" width="200" height="200">
-        </div>
-
+        <img class="cube" src="img/cubes/xxxxyxxrxxbxxbxbbbxxxxrxrrr.png" width="200" height="200">
+        or
+        <img class="cube" src="img/cubes/xxxxyxxbxxrxxrxrrrxxxxgxggg.png" width="200" height="200">
         <p>To put the piece in the correct place, you need one of two algorithms. 
             They are the inverse of each other, and they make the edge piece in the
             top layer go either left or right. These are the longest algorithms that
             you will need to learn:</p>
 
-        <div class="row">
-            <div class="small-12 medium-6 columns">
-                <div class="alg">
-                    <img class="cube" src="img/cubes/xxxxyxxrxxbxxbxbbbxxxxrxrrr.png" width="200" height="200">
-                    <span>U R U' R' U' F' U F</span>
-                    <p>Makes the top piece go right</p>
-                </div>
-            </div>
-            <div class="small-12 medium-6 columns">
-                <div class="alg">
-                    <img class="cube" src="img/cubes/xxxxyxxbxxrxxrxrrrxxxxgxggg.png" width="200" height="200">
-                    <span>U' L' U L U F U' F'</span>
-                    <p>Makes the top piece go left</p>
-                </div>
-            </div>
-        </div>
+
+        <img class="cube" src="img/cubes/xxxxyxxrxxbxxbxbbbxxxxrxrrr.png" width="200" height="200">
+        <span>U R U' R' U' F' U F</span>
+        <p>Makes the top piece go right</p>
+
+        <img class="cube" src="img/cubes/xxxxyxxbxxrxxrxrrrxxxxgxggg.png" width="200" height="200">
+        <span>U' L' U L U F U' F'</span>
+        <p>Makes the top piece go left</p>
 
         <p>Sometimes, the second layer is sneaky and will throw this sort of situation at you:</p>
         <img class="cube" src="img/cubes/xyxyyoxyxxrxgbobbbxyxgrbrrr.png" width="200" height="200">
@@ -250,25 +215,19 @@
             algorithm for each situation is written below. Obviously, if you already 
             have a cross, move on to the next step!</p>
 
-        <div class="alg">
-            <img class="cube" src="img/cubes/xyxyyxxxxxxxbbbbbbxxxrrrrrr.png" width="200" height="200">
-            <span>F U R U' R' F'</span>
-            <p>Make sure you hold the L in the top left corner (like in the picture)</p>
-        </div>
-        <div class="alg">
-            <img class="cube" src="img/cubes/xxxyyyxxxxxxbbbbbbxxxrrrrrr.png" width="200" height="200">
-            <span>F R U R' U' F'</span>
-            <p>Make sure you hold the line horizontally</p>
-        </div>
-        <div class="alg">
-            <img class="cube" src="img/cubes/xxxxyxxxxxxxbbbbbbxxxrrrrrr.png" width="200" height="200">
-            <span>Use both, in either order.</span>
-            <p>Using the L algorithm gets you to a line, so you can then use the
-                line algorithm, and vice versa</p>
-        </div>
+        <img class="cube" src="img/cubes/xyxyyxxxxxxxbbbbbbxxxrrrrrr.png" width="200" height="200">
+        <span>F U R U' R' F'</span>
+        <p>Make sure you hold the L in the top left corner (like in the picture)</p>
+        <img class="cube" src="img/cubes/xxxyyyxxxxxxbbbbbbxxxrrrrrr.png" width="200" height="200">
+        <span>F R U R' U' F'</span>
+        <p>Make sure you hold the line horizontally</p>
+        <img class="cube" src="img/cubes/xxxxyxxxxxxxbbbbbbxxxrrrrrr.png" width="200" height="200">
+        <span>Use both, in either order.</span>
+        <p>Using the L algorithm gets you to a line, so you can then use the
+            line algorithm, and vice versa</p>
 
 
-        <h2 id="step5">Step 5 - The Last Layer Edges</h2>
+        <h2>Step 5 - The Last Layer Edges</h2>
         <p>This step will change the orientation of the edges of the cross you just 
             created to line up with the centres, like such:</p>
         <img class="cube" src="img/cubes/xyxyyyxyxxbxbbbbbbxrxrrrrrr.png" width="200" height="200">
@@ -278,16 +237,14 @@
 
         <p>However, you must make sure that you hold the cube the correct way before applying 
             the algorithm. You need to turn the up face until two of the edge pieces are in the 
-            correct position, so that the colours line up with the centre pieces. There will
+            correct position, so that the colors line up with the center pieces. There will
             always be two that are correct, and they will either be opposite or adjacent to
             each other. Keep turning the up face until you find them!</p>
 
         <p>If they are opposite each other, apply the algorithm while holding one correct
             edge facing away from you and the other facing towards you, like this:</p>
-        <div class="alg">
-            <img class="cube" src="img/cubes/xyxyyyxyxxbxbbbbbbxoxrrrrrr.png" width="200" height="200">
-            <p>The green edge here is correctly aligned, facing away</p>
-        </div>
+        <img class="cube" src="img/cubes/xyxyyyxyxxbxbbbbbbxoxrrrrrr.png" width="200" height="200">
+        <p>The green edge here is correctly aligned, facing away</p>
 
         <p>You now have to repeat the above process - look for the two correct edge pieces,
             and hold them correctly before applying the algorithm. They won't be the same two 
@@ -303,15 +260,13 @@
         <p>Applying the algorithm again will correctly align all the edge pieces, but a further
             U may be needed to ensure they are all in the right places before moving on.</p>
 
-        <h2 id="step6">Step 6 - The Last Layer Corners 1</h2>
+        <h2>Step 6 - The Last Layer Corners 1</h2>
         <p>This step alters the corners so they are all in the right place but not necessarily
             in the right orientation, like this:</p>
 
-        <div class="alg">
-            <img class="cube" src="img/cubes/gyyyyyoybybrbbbbbbyrrrrrrrr.png" width="200" height="200">
-            <p>This is just an example - your corners may be in a different orientation once 
-                you've done this.</p>
-        </div>
+        <img class="cube" src="img/cubes/gyyyyyoybybrbbbbbbyrrrrrrrr.png" width="200" height="200">
+        <p>This is just an example - your corners may be in a different orientation once 
+            you've done this.</p>
 
         <p>First thing to do is to examine your cube and see if there are any corners that are 
             already in the right place, like the red, blue, and yellow one in the picture above. 
@@ -338,7 +293,7 @@
             for them all to be correct.</p>
 
 
-        <h2 id="step7">Step 7 - The Last Layer Corners 2</h2>
+        <h2>Step 7 - The Last Layer Corners 2</h2>
         <p>This is the last step, so it will result in the completed cube:</p>
         <img class="cube" src="img/cubes/yyyyyyyyybbbbbbbbbrrrrrrrrr.png" width="200" height="200">
 
@@ -358,20 +313,13 @@
             the algorithm either two or four times, depending on which way the yellow side
             of the cubie is facing:</p>
 
-        <div class="row">
-            <div class="small-12 medium-6 columns">
-                <div class="alg">
-                    <img class="cube" src="img/cubes/xyxyyyxybxbrbbbbbbyrxrrrrrr.png" width="200" height="200">
-                    <span>Do the algorithm twice, i.e. (R' D' R D) x 2</span>
-                </div>
-            </div>
-            <div class="small-12 medium-6 columns">
-                <div class="alg">
-                    <img class="cube" src="img/cubes/xyxyyyxyrxbybbbbbbbrxrrrrrr.png" width="200" height="200">
-                    <span>Do the algorithm four times, i.e. (R' D' R D) x 4</span>
-                </div>
-            </div>
-        </div>
+
+        <img class="cube" src="img/cubes/xyxyyyxybxbrbbbbbbyrxrrrrrr.png" width="200" height="200">
+        <span>Do the algorithm twice, i.e. (R' D' R D) x 2</span>
+
+        <img class="cube" src="img/cubes/xyxyyyxyrxbybbbbbbbrxrrrrrr.png" width="200" height="200">
+        <span>Do the algorithm four times, i.e. (R' D' R D) x 4</span>
+
 
         <p>When you are doing these algorithms, try and bear in mind two things. Firstly, 
             Ds in an algorithm can throw people off because it's easy to mix up D and D'.
@@ -395,7 +343,5 @@
         <p>Congratulations!</p>
 
 
-    </div>
-</div>
-</body>
+    </body>
 </html>
