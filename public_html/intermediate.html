@@ -10,7 +10,7 @@
         <div id="header">
             <a href=""><img src="img/cubes/Rubik-s-Cube-2-X-2-3453652_3.jpg" width='300' height="250" ></a>
             <span>All Problems Can Be Solved</span>
-            
+
         </div>
 
         <nav id="menu">
@@ -21,5 +21,140 @@
                 <a href="contact.html">Contact</a>
             </ul>
         </nav>
+        <div>
+            <h1>Intermediate Method</h1>
+
+        </div>
+
+        <p>The intermediate method isn't really a set method of doing the cube 
+            - it's more of a stepping stone on the way to learning the full
+            advanced method.</p>
+        <p>In this method, the last layer is done differently. The beginner
+            method for the last layer is easier to learn as there are fewer 
+            algorithms, but it is slow. If you want to start cutting down your
+            time, then you need to start learning the advanced method, CFOP .
+            However,there are a lot of algorithms to learn for the full CFOP method, 
+            so this intermediate method is about how to split up some of the 
+            stages so you need to learn fewer algorithms. This is actually 
+            called 2-look OLL and 2-look PLL, if you want to get technical 
+            about it.</p>
+        <p>This method starts in exactly the same way as the beginner method 
+            - cross, corners, and second layer. Then you go on to:</p>
+
+        <h2>Step 1 - 2-look OLL</h2>
+        <p>This step aims to complete the last face, regardless of the
+            position of the cubies, like this:</p>
+        <img class="cube" src="img/cubes/yyyyyyyyyxxxbbbbbbxxxrrrrrr.png" 
+             width="200" height="200">
+        <p>Perhaps unsurprisingly, we're going to do this in two steps 
+            (hence the '2-look').</p>
+        <p>The first part of this step is to get a cross on the top face.
+            At this point, however, we can be a little clever if we find 
+            ourselves presented with this:</p>
+
+
+        <img class="cube" src="img/cubes/xxxxyxxxxxxxbbbbbbxxxrrrrrr.png" width="200" height="200">
+        <span>(R U2) (R2' F R F') U2 (R' F R F')</span>
+
+        <p>Instead of the beginner method of using both F U R U' R' F' and
+            F R U R' U' F' and having to spin the cube about in the middle,
+            this algorithm flips all the edges in one go and saves us a little
+            time and effort. There are loads of algorithms to do this, but I 
+            like this one best. Alternatively, you could just stick to the 
+            beginner way, but this algorithm will come back when you learn 
+            proper OLL and you'll feel all smug when you already know it.</p>
+        <p>You may have noticed some suspicious looking brackets lurking about
+            in the middle of that algorithm. They are there to help you perform 
+            the algorithm by splitting it up into different sections. This makes
+            it both easier to read and easier to do, as the sections are usually
+            only three or four moves long. You are, of course, free to ignore them
+            and perform the algorithm in any way you wish.
+        <p>The second part of this step is to correctly orient the corner
+            cubie, so that all of the cubies have their yellow faces pointing upwards.</p>
+        <p>Much like the beginner method, the rest of the last layer isn't an
+            intuitive thing you can just work out (if you can, go work for NASA or something).
+            Unfortunately, this means you have to just learn which algorithms correspond
+            to which case. Fortunately, there are only seven of them and they're all in 
+            this handy-dandy table:</p>
+
+        <div id="oll">
+            <div class="impair">
+         <img src="img/advanced/oll/cross2.png" width="82" height="82">
+        <span>L' U R U' L U R'</span>
+            </div>
+            <div class="pair">
+        <img src="img/advanced/oll/cross1.png" width="82" height="82">
+        <span>R' U2 R U R' U R</span>
+            </div>
+        <br>
+        <div class="impair">
+        <img src="img/advanced/oll/cross3.png" width="82" height="82">
+        <span>L U' R' U L' U R U R' U R</span>
+        </div>
+        <div class="pair">
+        <img src="img/advanced/oll/cross5.png" width="82" height="82">
+        <span>R' F' L F R F' L' F</span>
+        </div>
+        <br>
+        <div class="impair">
+        <img src="img/advanced/oll/cross4.png" width="82" height="82">
+        <span>R U R' U R U' R' U R U2 R'</span>
+        </div>
+        <div class="pair">
+        <img src="img/advanced/oll/cross6.png" width="82" height="82">
+        <span>R' F' L' F R F' L F</span>
+        </div>
+        <br>
+        <div class="impair">
+        <img src="img/advanced/oll/cross7.png" width="82" height="82">
+        <span>R2 D R' U2 R D' R' U2 R'</span>
+        </div>
+        </div>
+
+
+        <h2>Step 2 - 2-look PLL</h2>
+        <p>This step aims to orient the corners in their correct positions, like this:</p>
+        <img class="cube" src="img/cubes/yyyyyyyyybxbbbbbbbrxrrrrrrr.png" width="200" height="200">
+
+        <p>Continuing the 2-look theme, we're going to do this in two steps.
+            First, the corners. To do this, you need to find two corners that
+            have the same colour facing away from each other, like this:</p>
+        <img src="img/intermediate/corners.png" width="72" height="82">
+        <p>where the indicated sides of the corners are the same colour. 
+            There should only be one of these pairs on the cube, so look 
+            carefully until you find it.</p>
+
+        <p>Occasionally, however, <b>all</b> of the opposite sides will be 
+            the same colour. In this case, it does not matter which way you 
+            hold the cube when performing the algorithm. When doing the algorithm, 
+            you hold the cube so the opposite colours are in the same place as
+            indicated in the above picture.</p>
+        <p>The algorithm is:</p>
+        <p>x R2 D2 R U R' D2 R U' R</p>
+        <p>Remember that x means to rotate the cube away from you, like doing
+            R but with the whole cube. If all of the opposite sides were the
+            same colour before, you will have to repeat this process, as now
+            there is only one opposite pair.</p>
+        <p>Now, the corners.</p>
+        <p>This step aims to orientate the edges of the cross, resulting in a complete cube like so:</p>
+        <img class="cube" src="img/cubes/yyyyyyyyybbbbbbbbbrrrrrrrrr.png" width="200" height="200">
+
+        <p>You will either have one or no correct edges to being with.
+            If you have one, hold the correct one away from you, but if 
+            you have none it does not matter which way you hold it. There 
+            are two algorithms to use, and they are very similar:</p>
+
+        <img src="img/intermediate/edges1.png" width="72" height="72">
+        <span>F2 U L R' F2 L' R U F2</span>
+
+        <img src="img/intermediate/edges2.png" width="72" height="72">
+        <span>F2 U' L R' F2 L' R U' F2</span>
+
+        <p>Once this algorithm has been done, you have completed the Rubik's Cube!
+            If you had no correct edges earlier, you will have to do the algorithm again
+            , holding the now correct edge away from you. Then you will have completed 
+            the Rubik's Cube!</p>
+        <p>Congratulations!</p>
+
     </body>
 </html>

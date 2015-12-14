@@ -17,6 +17,7 @@ body{
     text-align:center;
     background-color: white;
     padding: 10px 0px;
+    
 
 }
 #menu>ul{
@@ -35,4 +36,30 @@ body{
     background:white;
     color:blue;
     border:none;
+}
+#menu>ul>a:hover{
+    background-color: red;
+    color: white;
+    
+}
+#oll{
+    width: 550px;
+    height: 350px;
+    padding: 20px 5px;
+    margin: 50px auto 0px;
+}
+
+.impair{
+    float: left;
+    display: inline;
+}
+
+.pair{
+    float: right;
+    display: inline;
+}
+
+span{
+    position: relative;
+    bottom: 40px
 }
