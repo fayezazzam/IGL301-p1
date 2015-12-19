@@ -17,7 +17,7 @@ body{
     text-align:center;
     background-color: white;
     padding: 10px 0px;
-    
+
 
 }
 #menu>ul{
@@ -40,7 +40,7 @@ body{
 #menu>ul>a:hover{
     background-color: red;
     color: white;
-    
+
 }
 #oll{
     width: 550px;
@@ -62,4 +62,20 @@ body{
 span{
     position: relative;
     bottom: 40px
+}
+input,textarea{
+    width: 400px;
+    height: 25px;
+}
+button{
+    background-color: #008CBA;
+    border: none;
+    font-size: 15px;
+    color: white;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    text-align: center;
+    position: relative;
 }
