@@ -1,6 +1,8 @@
 body{
-    position: relative;
-    text-align: center;   
+    text-align: justify;   
+}
+#header{
+    text-align: center;
 }
 #header>span{
     position:relative;
@@ -17,8 +19,6 @@ body{
     text-align:center;
     background-color: white;
     padding: 10px 0px;
-
-
 }
 #menu>ul{
     display:inline-block;
@@ -38,9 +38,7 @@ body{
     border:none;
 }
 #menu>ul>a:hover{
-    background-color: red;
-    color: white;
-
+    color: lime;
 }
 #oll{
     width: 550px;
@@ -63,19 +61,31 @@ span{
     position: relative;
     bottom: 40px
 }
-input,textarea{
+input{
     width: 400px;
     height: 25px;
 }
+textarea{
+    width: 400px;
+    max-width: 400px;
+}
 button{
     background-color: #008CBA;
-    border: none;
     font-size: 15px;
-    color: white;
+    cursor: pointer;
+    color:white;
     padding-bottom: 15px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15px; 
     text-align: center;
-    position: relative;
+}
+button:hover{
+    color: lime;
+}
+h6,h5,h4{
+    font-size: 20px;
+}
+.fb>p>a{
+    text-decoration: none;
 }

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rubik's Cube</title>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+
+        <div id="header">
+            <a href=""><img src="img/cubes/Rubik-s-Cube-2-X-2-3453652_3.jpg" width='300' height="250" ></a>
+            <span>All Problems Can Be Solved</span>
+
+        </div>
+
+        <nav id="menu">
+            <ul>
+                <a href="index.html">Beginner</a>
+                <a href="intermediate.html">Intermediate</a>
+                <a href="notation.html">Notation</a>
+                <a href="contact.html">Contact</a>
+            </ul>
+        </nav>
+        <h1>Basic Notation</h1>
+        
+        In order to talk about how to solve the cube, we need to have a way to easily 
+        describe what moves to do.  The notation here is pretty standard, and just about
+        any cube website you see that talks about moves will always use this same notation.  
+        You can see all of these moves demonstrated at the bottom of the page.
+
+        <h2>Faces</h2>
+        
+        There are 6 faces:  right (<strong>R</strong>), left (<strong>L</strong>), 
+        up (<strong>U</strong>), down (<strong>D</strong>), front (<strong>F</strong>),
+        and back (<strong>B</strong>).  Exactly which colors are on each face will depend 
+        on how you hold the cube, but it's usually most convenient to talk about these 
+        relative moves instead of the face colors.  Each face can be rotated in two 
+        different directions.  <b>Clockwise</b>
+        or <b>counter-clockwise</b> means that direction as seen when you're looking 
+        straight at that face.  Another way to figure it out is to use a right hand rule.
+        Point your right thumb out away from the face in question, and curl your fingers. 
+        The direction of their curl is always counter-clockwise.
+
+        <h3>Fundamental Moves</h3>
+        
+        The most fundamental moves are 90-degree clockwise turns of the face 
+        described by the letters above.  I will also always bold moves here so 
+        that they stand out from normal text.  To be completely clear, the 6 
+        fundamental moves are the following:<br>
+        <div class="list">
+            <ul>
+                <li><strong>R</strong> means turn the right face such that the side on top moves to the back.</li>
+                <li><strong>L</strong> means turn the left face such that the side on top moves to the front.</li>
+                <li><strong>U</strong> means turn the up face such that the side in front moves to the left.</li>
+                <li><strong>D</strong> means turn the down face such that the side in front moves to the right.</li>
+                <li><strong>F</strong> means turn the front face such that the side on top moves to the right.</li>
+                <li><strong>B</strong> means turn the back face such that the side on top moves to the left.</li>
+            </ul></div>
+        
+        <h4>Modifiers</h4>
+        Modifiers can be attached to the end of these moves to change how they turn. 
+        The examples below all use <strong>R</strong> as the base move, but they 
+        can be used with any face.
+        <div class="list"><ul>
+            <li><strong>R'</strong> (spoken "R prime") means to turn the right face 
+                90-degrees counter-clockwise, i.e. in the opposite direction as above.</li>
+            <li><strong>R2</strong> (spoken "R two") means to turn the right face 180-degrees.</li>
+        </ul>
+        </div>
+        <h5>Two-Layer Moves</h5>
+        Lower case letters (<strong>r</strong>, <strong>l</strong>, <strong>u</strong>,
+        <strong>d</strong>,<strong>f</strong>, and <strong>b</strong>) mean to rotate
+        both the corresponding face and the central layer next to it.  For example, 4
+        <strong>r</strong> means to rotate both 
+        the R face and the slice between R and L together in the same direction as a normal
+        <strong>R</strong> move.  The <strong> ' </strong> and <strong>2</strong> modifiers
+        can be applied to these as well.
+        Note that although <strong>r</strong> and <strong>L</strong> produce the same change in the cube, 
+        they are not quite the same.  The difference is that they leave the cube oriented differently in 
+        your hands.   <strong>L</strong> keeps the same center color on the F face, for example, but
+        <strong>r</strong> moves that color to the U face.  Thus <strong>r</strong> is really equivalent
+        not to <strong>L</strong>, but to <strong>Lx</strong>, where <strong>x</strong> means...
+
+        <h6>Rotations</h6>
+        These moves mean to rotate the entire cube in your hands without turning any faces. 
+        The <strong> ' </strong> and <strong>2</strong> modifiers can be applied to these 
+        and reverse the direction of the rotation or double it, respectively.
+        <div class="list">
+            <ul>
+            <li style="list-style-type: circle"><strong>x</strong> means to rotate the entire cube about the axis that connects R and L, 
+                rotating 90-degrees clockwise in the direction of an <strong>R</strong> move.</li>
+            <li style="list-style-type: circle"><strong>y</strong> means to rotate the entire cube about the axis that connects U and D, 
+                rotating 90-degrees clockwise in the direction of a <strong>U</strong> move.</li>
+            <li style="list-style-type: circle"><strong>z</strong> means to rotate the entire cube about the axis that connects F and B, 
+                rotating 90-degrees clockwise in the direction of an <strong>F</strong> move.</li>
+        </ul>
+        </div>
+        <table border="1" align="center">
+            <tbody>
+                <tr>
+                    <td><a><strong>R</strong></a></td>
+                    <td><a><strong>L</strong></a></td>
+                    <td><a><strong>U</strong></a></td>
+                    <td><a><strong>D</strong></a></td>
+                    <td><a><strong>F</strong></a></td>
+                    <td><a><strong>B</strong></a></td>
+                    <td><a><strong>x</strong></a></td>
+                    <td><a><strong>y</strong></a></td>
+                    <td><a><strong>z</strong></a></td>
+                </tr>
+                <tr>
+                    <td><a><strong>R' </strong></a></td>
+                    <td><a><strong>L' </strong></a></td>
+                    <td><a><strong>U' </strong></a></td>
+                    <td><a><strong>D' </strong></a></td>
+                    <td><a><strong>F' </strong></a></td>
+                    <td><a><strong>B' </strong></a></td>
+                    <td><a><strong>x' </strong></a></td>
+                    <td><a><strong>y' </strong></a></td>
+                    <td><a><strong>z' </strong></a></td>
+                </tr><tr>
+                    <td><a><strong>R2</strong></a></td>
+                    <td><a><strong>L2</strong></a></td>
+                    <td><a><strong>U2</strong></a></td>
+                    <td><a><strong>D2</strong></a></td>
+                    <td><a><strong>F2</strong></a></td>
+                    <td><a><strong>B2</strong></a></td>
+                    <td><a><strong>x2</strong></a></td>
+                    <td><a><strong>y2</strong></a></td>
+                    <td><a><strong>z2</strong></a></td>
+                </tr>
+                <tr>
+                    <td><a><strong>r</strong></a></td>
+                    <td><a><strong>l</strong></a></td>
+                    <td><a><strong>u</strong></a></td>
+                    <td><a><strong>d</strong></a></td>
+                    <td><a><strong>f</strong></a></td>
+                    <td><a><strong>b</strong></a></td>
+                </tr>
+                <tr>
+                    <td><a><strong>r' </strong></a></td>
+                    <td><a><strong>l' </strong></a></td>
+                    <td><a><strong>u' </strong></a></td>
+                    <td><a><strong>d' </strong></a></td>
+                    <td><a><strong>f' </strong></a></td>
+                    <td><a><strong>b' </strong></a></td>
+                </tr>
+                <tr>
+                    <td><a><strong>r2</strong></a></td>
+                    <td><a><strong>l2</strong></a></td>
+                    <td><a><strong>u2</strong></a></td>
+                    <td><a><strong>d2</strong></a></td>
+                    <td><a><strong>f2</strong></a></td>
+                    <td><a><strong>b2</strong></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
